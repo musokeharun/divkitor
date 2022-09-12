@@ -1,0 +1,201 @@
+{
+  "templates": {
+    "medium_card": {
+      "type": "container",
+      "background": [
+        {
+          "type": "solid",
+          "color": "#FFF"
+        }
+      ],
+      "paddings": {
+        "left": 16,
+        "top": 16,
+        "right": 16,
+        "bottom": 16
+      },
+      "margins": {
+        "bottom": 8
+      },
+      "items": [
+        {
+          "type": "container",
+          "orientation": "horizontal",
+          "items": [
+            {
+              "type": "user_avatar",
+              "$image_url": "avatar"
+            },
+            {
+              "type": "user_name",
+              "$text": "username"
+            },
+            {
+              "type": "time",
+              "$text": "time"
+            }
+          ],
+          "margins": {
+            "bottom": 8
+          }
+        },
+        {
+          "type": "title",
+          "$text": "title"
+        },
+        {
+          "type": "container",
+          "orientation": "horizontal",
+          "items": [
+            {
+              "type": "footer_icon",
+              "image_url": "https://yastatic.net/s3/home/yandex-app/div_demo/hand.png"
+            },
+            {
+              "type": "footer_text",
+              "text_color": "#7AA600",
+              "$text": "votes"
+            },
+            {
+              "type": "footer_icon",
+              "image_url": "https://yastatic.net/s3/home/yandex-app/div_demo/bubble2.png"
+            },
+            {
+              "type": "footer_text",
+              "$text": "comments"
+            }
+          ]
+        }
+      ],
+      "orientation": "vertical"
+    },
+    "user_name": {
+      "type": "text",
+      "font_size": 13,
+      "text_color": "#414b50",
+      "font_weight": "medium",
+      "width": {
+        "type": "wrap_content"
+      },
+      "alignment_vertical": "center",
+      "margins": {
+        "right": 5
+      }
+    },
+    "user_avatar": {
+      "type": "image",
+      "width": {
+        "type": "fixed",
+        "value": 24
+      },
+      "height": {
+        "type": "fixed",
+        "value": 24
+      },
+      "border": {
+        "corner_radius": 3
+      },
+      "margins": {
+        "right": 5
+      }
+    },
+    "time": {
+      "type": "text",
+      "font_size": 13,
+      "text_color": "#777",
+      "width": {
+        "type": "wrap_content"
+      },
+      "alignment_vertical": "center",
+      "margins": {
+        "right": 5
+      }
+    },
+    "title": {
+      "type": "text",
+      "font_size": 20,
+      "text_color": "#333",
+      "line_height": 23,
+      "font_weight": "medium",
+      "margins": {
+        "bottom": 20
+      }
+    },
+    "footer_icon": {
+      "type": "image",
+      "scale": "fit",
+      "width": {
+        "type": "fixed",
+        "value": 24
+      },
+      "height": {
+        "type": "fixed",
+        "value": 24
+      },
+      "border": {
+        "corner_radius": 3
+      },
+      "paddings": {
+        "top": 2,
+        "bottom": 2,
+        "left": 2,
+        "right": 2
+      }
+    },
+    "footer_text": {
+      "type": "text",
+      "font_size": 13,
+      "text_color": "#BDCDD6",
+      "font_weight": "medium",
+      "width": {
+        "type": "wrap_content"
+      },
+      "margins": {
+        "left": 4,
+        "right": 48
+      },
+      "alignment_vertical": "center"
+    },
+    "footer_space": {
+      "type": "separator",
+      "width": {
+        "type": "match_parent",
+        "weight": 1
+      },
+      "delimiter_style": {
+        "color": "#0000"
+      }
+    },
+    "news_item": {
+      "type": "container"
+    }
+  },
+  "card": {
+    "log_id": "div2_sample_card",
+    "states": [
+      {
+        "state_id": 0,
+        "div": {
+          "type": "container",
+          "background": [
+            {
+              "type": "solid",
+              "color": "#F0F0F0"
+            }
+          ],
+          "items": [
+            {
+              "type": "medium_card",
+              "avatar": "https://habrastorage.org/r/w32/getpro/habr/avatars/133/48f/f00/13348ff00887755177016af1d4ea450e.png",
+              "username": "Barseadr",
+              "time": "today at 11:48 AM",
+              "title": "1-on-1 meetings: not confrontation but cooperation",
+              "votes": "+21",
+              "comments": "4"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
